@@ -537,6 +537,123 @@ img {
   background-image: url("../img/pharmacy.svg");
 }
 
+/* Articles */
+
+.articles {
+  margin-top: 100px;
+  padding-bottom: 201px;
+  text-align: center;
+  background: linear-gradient(white, #e5e5e5);
+}
+
+.articles * {
+  z-index: 1;
+}
+
+.articles::before {
+  content: "";
+  background-image: url(/img/dots-grid.svg);
+  width: 133px;
+  height: 115px;
+  position: absolute;
+  margin-left: -380px;
+  margin-top: 110px;
+}
+
+.background__shadow {
+  background-image: url(/img/gray-shadow.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-y: 0px;
+  position: absolute;
+  height: 650px;
+  z-index: 0;
+  width: 1000px;
+  right: 0;
+  margin-top: -835px;
+  margin-bottom: 0;
+}
+
+.articles__list {
+  display: flex;
+  margin-top: 72px;
+  margin-bottom: 79px;
+  justify-content: space-between;
+}
+
+.articles__list-item {
+  width: 350px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  z-index: 1;
+}
+
+.articles__list-item:hover {
+  box-shadow: 0 0 35px #4089ed;
+}
+
+.articles__list-item img {
+  width: 100%;
+  height: 264px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.articles__list-item article {
+  padding: 20px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  mix-blend-mode: normal;
+}
+
+.articles__list-item article p {
+  color: #7d7987;
+  margin-top: 10px;
+}
+
+.articles__list-item article *:hover {
+  text-decoration: underline;
+  text-decoration-color: #4089ed;
+  text-decoration-line: 4px;
+}
+
+.articles__list-item article h3 {
+  max-width: 300px;
+}
+
+.read__more-link {
+  color: #458ff6;
+  text-decoration: none;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 50px;
+  margin-top: 25px;
+  padding: 0;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.read__more-link:hover {
+  text-decoration: underline;
+}
+
+.button--icon-right::after {
+  background-image: url("/img/small-right-arrow.svg");
+}
+
+.hover__underline:hover {
+  text-decoration: underline;
+}
+
 /**
 
   Footer
